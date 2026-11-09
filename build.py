@@ -62,6 +62,12 @@ body.is-locked{overflow:hidden}
 @media (max-width:640px){.head__tel{display:none}.foot__grid{grid-template-columns:1fr}}
 """
 
+MOB = """<nav class="mobbar" aria-label="Быстрая связь">
+  <a class="mobbar__b mobbar__b--call" href="tel:__PH__">Позвонить</a>
+  <a class="mobbar__b" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+"""
+
 HEAD = """<!doctype html>
 <html lang="ru">
 <head>
@@ -81,7 +87,7 @@ HEAD = """<!doctype html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
 <style>__CRIT__</style>
-<link rel="stylesheet" href="assets/css/style.v2.css">
+<link rel="stylesheet" href="assets/css/style.v3.css">
 <script type="application/ld+json">{ld}</script>
 </head>
 <body>
@@ -733,7 +739,8 @@ def build():
                     .replace("__CITY__", CITY).replace("__AREA__", AREA))
         page = (page_body.replace("__PH__", PHONE_H).replace("__PHONE__", PHONE)
                          .replace("__CITY__", CITY).replace("__AREA__", AREA).replace("__WA__", WA))
-        html = head + header + page + nextblk + foot + drawer + '<script src="assets/js/main.v3.js" defer></script>\n</body>\n</html>\n'
+        mob = MOB.replace('__PH__', PHONE_H).replace('__WA__', WA)
+        html = head + header + page + nextblk + foot + drawer + mob + '<script src="assets/js/main.v3.js" defer></script>\n</body>\n</html>\n'
         open(slug, "w", encoding="utf-8").write(html)
         print("built", slug, len(html))
 

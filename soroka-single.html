@@ -308,6 +308,23 @@ a{transition:color .2s,border-color .2s,background .2s}
   .shot:hover img{transform:none}
 }
 
+/* ---------- мобильная полоса связи ---------- */
+.mobbar{display:none}
+@media (max-width:720px){
+  body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  .mobbar{
+    display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:70;
+    background:rgba(13,13,12,.97);border-top:1px solid rgba(239,237,230,.2);
+    padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+  }
+  .mobbar__b{
+    display:flex;align-items:center;justify-content:center;min-height:46px;
+    font:400 11px/1 var(--m);letter-spacing:.16em;text-transform:uppercase;
+    border:1px solid rgba(239,237,230,.32);color:var(--chalk);
+  }
+  .mobbar__b--call{background:var(--red);border-color:var(--red);color:#fff}
+}
+
 /* --- одностраничный режим --- */
 .pg[hidden]{display:none!important}
 html{scroll-behavior:auto}
@@ -337,7 +354,7 @@ html{scroll-behavior:auto}
     <div class="hero__bottom">
       <p class="hero__lead">Фундамент, стены из блока и кирпича, крыша. Делаем весь конструктив дома, а не один этап: так стыки между работами не превращаются в проблему. Строим дома и хозпостройки с материалом — от 750 руб./м².</p>
       <div class="hero__actions">
-        <a class="btn btn--solid" href="kontakty.html">Вызвать на объект</a>
+        <a class="btn btn--solid" href="#/kontakty">Вызвать на объект</a>
         <a class="btn" href="tel:+375259048566">+375 (25) 904-85-66</a>
       </div>
     </div>
@@ -351,32 +368,32 @@ html{scroll-behavior:auto}
   <div class="wrap">
     <p class="kicker">01 · Что делаем</p>
     <div class="mosaic__grid">
-      <a class="tile tile--a" href="uslugi.html#monolit">
+      <a class="tile tile--a" href="#/uslugi/monolit">
         <span class="tile__n">01</span>
         <span class="tile__t">Монолитные работы</span>
         <span class="tile__d">Плиты, армопояса, лестницы, перекрытия. Опалубка, армирование, заливка.</span>
       </a>
-      <a class="tile tile--b" href="uslugi.html#found">
+      <a class="tile tile--b" href="#/uslugi/found">
         <span class="tile__n">02</span>
         <span class="tile__t">Фундаменты</span>
         <span class="tile__d">Лента и плита под дом или пристройку, с подготовкой и гидроизоляцией.</span>
       </a>
-      <a class="tile tile--c" href="uslugi.html#block">
+      <a class="tile tile--c" href="#/uslugi/block">
         <span class="tile__n">03</span>
         <span class="tile__t">Кладка блоков</span>
         <span class="tile__d">Газоблок, керамоблок, шлакоблок. Перевязка, армопояс, ровная геометрия.</span>
       </a>
-      <a class="tile tile--d" href="uslugi.html#brick">
+      <a class="tile tile--d" href="#/uslugi/brick">
         <span class="tile__n">04</span>
         <span class="tile__t">Кладка кирпича</span>
         <span class="tile__d">Несущие стены, перегородки, облицовка фасада, арки и сложные узлы.</span>
       </a>
-      <a class="tile tile--e" href="uslugi.html#roof">
+      <a class="tile tile--e" href="#/uslugi/roof">
         <span class="tile__n">05</span>
         <span class="tile__t">Кровельные работы</span>
         <span class="tile__d">Стропильная система, утепление, плёнки, покрытие, водосток.</span>
       </a>
-      <a class="tile tile--f" href="uslugi.html#doma">
+      <a class="tile tile--f" href="#/uslugi/doma">
         <span class="tile__n">06</span>
         <span class="tile__t">Дома и хозпостройки</span>
         <span class="tile__price">от 750 руб./м²</span>
@@ -633,7 +650,7 @@ html{scroll-behavior:auto}
       <p class="cta__text">Начните с фундамента: остальное считается после него. Позвоните, и мы скажем, что нужно подготовить на участке.</p>
       <div class="cta__actions">
         <a class="btn btn--solid" href="tel:+375259048566">+375 (25) 904-85-66</a>
-        <a class="btn" href="kontakty.html">Оставить заявку</a>
+        <a class="btn" href="#/kontakty">Оставить заявку</a>
       </div>
     </div>
   </div>
@@ -695,7 +712,7 @@ html{scroll-behavior:auto}
     <div class="cta__side">
       <p class="cta__text">Скажите размеры дома и что уже стоит на участке. Этого хватит, чтобы назвать порядок цен.</p>
       <div class="cta__actions">
-        <a class="btn btn--solid" href="kontakty.html">Оставить заявку</a>
+        <a class="btn btn--solid" href="#/kontakty">Оставить заявку</a>
         <a class="btn" href="tel:+375259048566">+375 (25) 904-85-66</a>
       </div>
     </div>
