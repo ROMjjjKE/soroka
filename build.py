@@ -733,7 +733,7 @@ def build():
                     .replace("__CITY__", CITY).replace("__AREA__", AREA))
         page = (page_body.replace("__PH__", PHONE_H).replace("__PHONE__", PHONE)
                          .replace("__CITY__", CITY).replace("__AREA__", AREA).replace("__WA__", WA))
-        html = head + header + page + nextblk + foot + drawer + '<script src="assets/js/main.v2.js" defer></script>\n</body>\n</html>\n'
+        html = head + header + page + nextblk + foot + drawer + '<script src="assets/js/main.v3.js" defer></script>\n</body>\n</html>\n'
         open(slug, "w", encoding="utf-8").write(html)
         print("built", slug, len(html))
 
