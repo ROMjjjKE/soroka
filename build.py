@@ -6,6 +6,8 @@ import json
 PHONE = "+375 (25) 904-85-66"
 PHONE_H = "+375259048566"
 WA = "https://wa.me/375259048566"
+VIBER = "viber://chat?number=%2B375259048566"
+TG = "https://t.me/+375259048566"
 CITY = "Лида"
 AREA = "Лида и Гродненская область"
 SITE = "https://romjjjke.github.io/soroka/"
@@ -21,42 +23,42 @@ NAV = [
 CRIT = """[hidden]{display:none!important}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:#0D0D0C;color:#EFEDE6;font:400 16px/1.62 "Anonymous Pro",ui-monospace,monospace;-webkit-font-smoothing:antialiased}
+body{margin:0;background:#FFFFFF;color:#121212;font:400 18px/1.62 "Anonymous Pro",ui-monospace,monospace;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,p,ul,ol,figure,dl,dd{margin:0}
 ul,ol{padding:0;list-style:none}
 button{font:inherit}
-.head{position:sticky;top:0;z-index:60;background:#0D0D0C;border-bottom:1px solid rgba(239,237,230,.16)}
+.head{position:sticky;top:0;z-index:60;background:#FFFFFF;border-bottom:1px solid rgba(18,18,18,.16)}
 .head__row{display:flex;align-items:center;gap:16px;padding:12px clamp(14px,3.6vw,44px)}
-.brand{font:400 15px/1 "Russo One",sans-serif;letter-spacing:.14em;text-transform:uppercase}
-.brand small{display:block;font:400 9.5px/1.7 "Anonymous Pro",monospace;letter-spacing:.2em;color:#A8A49A;margin-top:5px}
-.nav{display:flex;gap:16px;margin-left:auto;font:400 10.5px/1 "Anonymous Pro",monospace;letter-spacing:.14em;text-transform:uppercase}
-.head__tel{margin-left:16px;font:400 12.5px/1 "Anonymous Pro",monospace;border-bottom:1px solid #FF3B00;padding-bottom:4px}
-.burger{display:none;width:44px;height:38px;margin-left:auto;border:1px solid #EFEDE6;background:transparent;cursor:pointer;padding:9px}
-.burger span{display:block;height:1.5px;background:#EFEDE6;margin:4px 0}
-.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);border-bottom:1px solid rgba(239,237,230,.16);min-height:min(88vh,860px)}
+.brand{font:400 17px/1 "Russo One",sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.brand small{display:block;font:400 11px/1.7 "Anonymous Pro",monospace;letter-spacing:.2em;color:#5C5850;margin-top:5px}
+.nav{display:flex;gap:18px;margin-left:auto;font:400 11.5px/1 "Anonymous Pro",monospace;letter-spacing:.14em;text-transform:uppercase}
+.head__tel{margin-left:16px;font:400 14px/1 "Anonymous Pro",monospace;border-bottom:1px solid #12814A;padding-bottom:4px}
+.burger{display:none;width:44px;height:38px;margin-left:auto;border:1px solid #121212;background:transparent;cursor:pointer;padding:9px}
+.burger span{display:block;height:1.5px;background:#121212;margin:4px 0}
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);border-bottom:1px solid rgba(18,18,18,.16);min-height:min(88vh,860px)}
 .hero__body{padding:clamp(22px,4vw,60px) clamp(14px,3.6vw,44px);display:flex;flex-direction:column;justify-content:space-between;gap:26px}
-.hero__media{position:relative;overflow:hidden;background:#191918}
+.hero__media{position:relative;overflow:hidden;background:#E8E5DC}
 .hero__media img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05)}
-.kicker{font:400 10px/1.4 "Anonymous Pro",monospace;letter-spacing:.22em;text-transform:uppercase;color:#FF3B00}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border:1px solid #EFEDE6;background:transparent;color:#EFEDE6;font:400 10.5px/1 "Anonymous Pro",monospace;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:.2s}
-.btn--solid{background:#FF3B00;border-color:#FF3B00;color:#0D0D0C}
+.kicker{font:400 11.5px/1.4 "Anonymous Pro",monospace;letter-spacing:.22em;text-transform:uppercase;color:#12814A}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 22px;border:1px solid #121212;background:transparent;color:#121212;font:400 12px/1 "Anonymous Pro",monospace;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:.2s}
+.btn--solid{background:#12814A;border-color:#12814A;color:#FFFFFF}
 .wrap{padding-inline:clamp(14px,3.6vw,44px);max-width:1560px;margin:0 auto}
-.drawer{position:fixed;inset:0;z-index:90;background:#0D0D0C;color:#EFEDE6;overflow-y:auto;overscroll-behavior:contain}
+.drawer{position:fixed;inset:0;z-index:90;background:#FFFFFF;color:#121212;overflow-y:auto;overscroll-behavior:contain}
 .drawer__inner{padding:clamp(54px,9vw,80px) clamp(16px,5vw,54px) clamp(24px,5vw,44px);display:flex;flex-direction:column;gap:22px;min-height:100%}
-.drawer__close{position:fixed;top:12px;right:12px;width:46px;height:46px;border:1px solid rgba(239,237,230,.45);background:transparent;color:#EFEDE6;font-size:24px;line-height:1;cursor:pointer}
+.drawer__close{position:fixed;top:12px;right:12px;width:46px;height:46px;border:1px solid rgba(18,18,18,.4);background:transparent;color:#121212;font-size:24px;line-height:1;cursor:pointer}
 .drawer__nav{display:flex;flex-direction:column}
-.drawer__nav a{font:400 clamp(1.3rem,.9rem + 2.2vw,2rem)/1.16 "Russo One",sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:13px 0;border-bottom:1px solid rgba(239,237,230,.16)}
-.drawer__meta{font:400 12px/1.8 "Anonymous Pro",monospace;color:rgba(239,237,230,.78);display:flex;flex-direction:column;gap:6px}
+.drawer__nav a{font:400 clamp(1.3rem,.9rem + 2.2vw,2rem)/1.16 "Russo One",sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:13px 0;border-bottom:1px solid rgba(18,18,18,.16)}
+.drawer__meta{font:400 14px/1.8 "Anonymous Pro",monospace;color:rgba(18,18,18,.8);display:flex;flex-direction:column;gap:6px}
 body.is-locked{overflow:hidden}
-.foot{border-top:1px solid rgba(239,237,230,.16);padding:clamp(22px,4vw,42px) clamp(14px,3.6vw,44px) 22px}
+.foot{border-top:1px solid rgba(18,18,18,.16);padding:clamp(22px,4vw,42px) clamp(14px,3.6vw,44px) 22px}
 .foot__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1560px;margin:0 auto}
-.foot__name{font:400 13px/1.35 "Russo One",sans-serif;letter-spacing:.1em;text-transform:uppercase}
-.foot__small{font-size:11.5px;line-height:1.7;color:#A8A49A;max-width:34ch}
-.foot__h{font:400 9.5px/1.7 "Anonymous Pro",monospace;letter-spacing:.2em;text-transform:uppercase;color:#A8A49A;margin-bottom:9px}
-.foot__col a{display:block;font-size:12.5px;padding:3px 0}
-.foot__bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:24px;padding-top:13px;border-top:1px solid rgba(239,237,230,.16);font-size:10.5px;line-height:1.7;color:#A8A49A;max-width:1560px;margin-inline:auto}
+.foot__name{font:400 15.5px/1.35 "Russo One",sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.foot__small{font-size:13px;line-height:1.7;color:#5C5850;max-width:34ch}
+.foot__h{font:400 11px/1.7 "Anonymous Pro",monospace;letter-spacing:.2em;text-transform:uppercase;color:#5C5850;margin-bottom:9px}
+.foot__col a{display:block;font-size:14px;padding:3px 0}
+.foot__bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:24px;padding-top:13px;border-top:1px solid rgba(18,18,18,.16);font-size:12px;line-height:1.7;color:#5C5850;max-width:1560px;margin-inline:auto}
 @media (max-width:1180px){.nav{display:none}.burger{display:block}}
 @media (max-width:1024px){.hero{grid-template-columns:1fr;min-height:0}.hero__media{min-height:clamp(240px,46vh,420px)}.foot__grid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.head__tel{display:none}.foot__grid{grid-template-columns:1fr}}
@@ -64,7 +66,9 @@ body.is-locked{overflow:hidden}
 
 MOB = """<nav class="mobbar" aria-label="Быстрая связь">
   <a class="mobbar__b mobbar__b--call" href="tel:__PH__">Позвонить</a>
-  <a class="mobbar__b" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="mobbar__b mobbar__b--wa" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="mobbar__b" href="__VIBER__">Viber</a>
+  <a class="mobbar__b" href="__TG__" target="_blank" rel="noopener">Telegram</a>
 </nav>
 """
 
@@ -81,13 +85,13 @@ HEAD = """<!doctype html>
 <meta property="og:description" content="{desc}">
 <meta property="og:locale" content="ru_BY">
 <meta property="og:url" content="__SITE__{slug}">
-<meta name="theme-color" content="#0D0D0C">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
 <style>__CRIT__</style>
-<link rel="stylesheet" href="assets/css/style.v3.css">
+<link rel="stylesheet" href="assets/css/style.v4.css">
 <script type="application/ld+json">{ld}</script>
 </head>
 <body>
@@ -95,7 +99,7 @@ HEAD = """<!doctype html>
 
 HEADER = """<header class="head">
   <div class="head__row">
-    <a class="brand" href="index.html">Сорока<small>Монолит · кладка · кровля · Лида</small></a>
+    <a class="brand" href="index.html">ИП Сорока П.М.<small>Монолит · кладка · кровля · Лида</small></a>
     <nav class="nav" aria-label="Разделы">{nav}</nav>
     <a class="head__tel" href="tel:__PH__">__PHONE__</a>
     <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Меню"><span></span><span></span><span></span></button>
@@ -120,7 +124,7 @@ FOOT = """</main>
 <footer class="foot">
   <div class="foot__grid">
     <div class="foot__col">
-      <p class="foot__name">ИП Сорока</p>
+      <p class="foot__name">ИП Сорока П.М.</p>
       <p class="foot__small">Монолитные работы, кладка блоков и кирпича, кровля. __AREA__. Опыт больше 10 лет.</p>
     </div>
     <div class="foot__col">
@@ -131,11 +135,11 @@ FOOT = """</main>
       <p class="foot__h">Связь</p>
       <a href="tel:__PH__">__PHONE__</a>
       <p class="foot__small">__CITY__, Гродненская область</p>
-      <p class="foot__small">Звонок или WhatsApp: фото объекта и объём работ.</p>
+      <p class="foot__small"><a href="__WA__" target="_blank" rel="noopener">WhatsApp</a> · <a href="__VIBER__">Viber</a> · <a href="__TG__" target="_blank" rel="noopener">Telegram</a><br>Звонок или сообщение: фото объекта и объём работ.</p>
     </div>
   </div>
   <div class="foot__bottom">
-    <p>© <span id="year">2026</span> ИП Сорока. УНП уточняется</p>
+    <p>© <span id="year">2026</span> ИП Сорока П.М. УНП уточняется</p>
     <p>Стоимость — после осмотра объекта. <a href="politika.html">Политика обработки данных</a></p>
   </div>
 </footer>
@@ -153,7 +157,7 @@ NEXT = """  <section class="next">
 LD = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "ИП Сорока",
+    "name": "ИП Сорока П.М.",
     "description": "Монолитные работы, кладка блоков и кирпича, кровельные работы, строительство домов и хозпостроек с материалом от 750 руб./м². Лида, Гродненская область.",
     "telephone": PHONE_H,
     "address": {"@type": "PostalAddress", "addressLocality": "Лида", "addressRegion": "Гродненская область", "addressCountry": "BY"},
@@ -177,7 +181,7 @@ PATTERNS = """<defs>
     <path d="M0 0h34M0 17h34M17 0v17" stroke="#9E9A90" stroke-width="1.4"/>
   </pattern>
   <pattern id="p-insul" width="16" height="16" patternUnits="userSpaceOnUse">
-    <rect width="16" height="16" fill="#EFEDE6"/>
+    <rect width="16" height="16" fill="#121212"/>
     <path d="M0 12 L5 4 L10 12 L15 4" stroke="#B0ACA2" stroke-width="1.2" fill="none"/>
   </pattern>
   <pattern id="p-gravel" width="12" height="12" patternUnits="userSpaceOnUse">
@@ -186,7 +190,7 @@ PATTERNS = """<defs>
   </pattern>
   <pattern id="p-memb" width="18" height="10" patternUnits="userSpaceOnUse">
     <rect width="18" height="10" fill="#3A3A37"/>
-    <path d="M2 5h13" stroke="#FF3B00" stroke-width="2"/>
+    <path d="M2 5h13" stroke="#12814A" stroke-width="2"/>
   </pattern>
   <pattern id="p-timber" width="20" height="12" patternUnits="userSpaceOnUse">
     <rect width="20" height="12" fill="#7A5A3A"/>
@@ -259,6 +263,11 @@ INDEX = """
       <div class="hero__actions">
         <a class="btn btn--solid" href="kontakty.html">Вызвать на объект</a>
         <a class="btn" href="tel:__PH__">__PHONE__</a>
+        <div class="msg">
+          <a class="btn btn--wa" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="__VIBER__">Viber</a>
+          <a class="btn" href="__TG__" target="_blank" rel="noopener">Telegram</a>
+        </div>
       </div>
     </div>
   </div>
@@ -269,35 +278,29 @@ INDEX = """
 
 <section class="mosaic">
   <div class="wrap">
-    <p class="kicker">01 · Что делаем</p>
+    <p class="kicker">Что делаем</p>
     <div class="mosaic__grid">
       <a class="tile tile--a" href="uslugi.html#monolit">
-        <span class="tile__n">01</span>
         <span class="tile__t">Монолитные работы</span>
         <span class="tile__d">Плиты, армопояса, лестницы, перекрытия. Опалубка, армирование, заливка.</span>
       </a>
       <a class="tile tile--b" href="uslugi.html#found">
-        <span class="tile__n">02</span>
         <span class="tile__t">Фундаменты</span>
         <span class="tile__d">Лента и плита под дом или пристройку, с подготовкой и гидроизоляцией.</span>
       </a>
       <a class="tile tile--c" href="uslugi.html#block">
-        <span class="tile__n">03</span>
         <span class="tile__t">Кладка блоков</span>
         <span class="tile__d">Газоблок, керамоблок, шлакоблок. Перевязка, армопояс, ровная геометрия.</span>
       </a>
       <a class="tile tile--d" href="uslugi.html#brick">
-        <span class="tile__n">04</span>
         <span class="tile__t">Кладка кирпича</span>
         <span class="tile__d">Несущие стены, перегородки, облицовка фасада, арки и сложные узлы.</span>
       </a>
       <a class="tile tile--e" href="uslugi.html#roof">
-        <span class="tile__n">05</span>
         <span class="tile__t">Кровельные работы</span>
         <span class="tile__d">Стропильная система, утепление, плёнки, покрытие, водосток.</span>
       </a>
       <a class="tile tile--f" href="uslugi.html#doma">
-        <span class="tile__n">06</span>
         <span class="tile__t">Дома и хозпостройки</span>
         <span class="tile__price">от 750 руб./м²</span>
         <span class="tile__d">Строительство с материалом: газоблок, кирпич, перекрытия, кровля. Цена за квадратный метр, а не «по факту».</span>
@@ -313,7 +316,7 @@ INDEX = """
   <div class="wrap">
     <header class="cut__head">
       <div>
-        <p class="kicker">02 · Разрез</p>
+        <p class="kicker">Разрез</p>
         <h2 class="h2">Из чего состоит конструкция</h2>
       </div>
       <p class="cut__hint">Три узла: фундамент, стена, кровля. Нажмите на слой, чтобы прочитать, зачем он нужен и что бывает, если его пропустить.</p>
@@ -355,7 +358,11 @@ INDEX = """
       <p class="cta__text">Позвоните, опишите, что нужно: фундамент, стены, крыша или всё вместе. Скажем, реально ли уложиться в ваш бюджет, и что делать в первую очередь.</p>
       <div class="cta__actions">
         <a class="btn btn--solid" href="tel:__PH__">__PHONE__</a>
-        <a class="btn" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="msg">
+          <a class="btn btn--wa" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="__VIBER__">Viber</a>
+          <a class="btn" href="__TG__" target="_blank" rel="noopener">Telegram</a>
+        </div>
       </div>
     </div>
   </div>
@@ -365,7 +372,7 @@ INDEX = """
 USLUGI = """
 <section class="phead">
   <div class="wrap">
-    <p class="kicker">Работы и услуги · 01</p>
+    <p class="kicker">Работы и услуги</p>
     <h1 class="h1">Шесть видов работ, <br><span class="out">один конструктив</span></h1>
     <p class="phead__lead">Можно взять отдельный этап, можно весь дом целиком — с материалом, от 750 руб./м². Второе чаще выходит дешевле: не надо дважды разводить бригады и подгонять чужие швы.</p>
   </div>
@@ -374,7 +381,6 @@ USLUGI = """
 <section class="svc" id="monolit">
   <div class="wrap svc__grid">
     <div class="svc__side">
-      <p class="svc__n">01</p>
       <h2 class="h2">Монолитные работы</h2>
     </div>
     <div class="svc__body">
@@ -388,7 +394,6 @@ USLUGI = """
 <section class="svc svc--flip" id="found">
   <div class="wrap svc__grid">
     <div class="svc__side">
-      <p class="svc__n">02</p>
       <h2 class="h2">Фундаменты</h2>
     </div>
     <div class="svc__body">
@@ -402,7 +407,6 @@ USLUGI = """
 <section class="svc" id="block">
   <div class="wrap svc__grid">
     <div class="svc__side">
-      <p class="svc__n">03</p>
       <h2 class="h2">Кладка блоков</h2>
     </div>
     <div class="svc__body">
@@ -416,7 +420,6 @@ USLUGI = """
 <section class="svc svc--flip" id="brick">
   <div class="wrap svc__grid">
     <div class="svc__side">
-      <p class="svc__n">04</p>
       <h2 class="h2">Кладка кирпича</h2>
     </div>
     <div class="svc__body">
@@ -430,7 +433,6 @@ USLUGI = """
 <section class="svc" id="roof">
   <div class="wrap svc__grid">
     <div class="svc__side">
-      <p class="svc__n">05</p>
       <h2 class="h2">Кровельные работы</h2>
     </div>
     <div class="svc__body">
@@ -444,7 +446,6 @@ USLUGI = """
 <section class="svc svc--flip" id="doma">
   <div class="wrap svc__grid">
     <div class="svc__side">
-      <p class="svc__n">06</p>
       <h2 class="h2">Дома и хозпостройки</h2>
       <p class="svc__price">от 750 <span>руб./м²</span></p>
       <p class="svc__priceNote">с материалом</p>
@@ -475,7 +476,7 @@ USLUGI = """
 RABOTY = """
 <section class="phead">
   <div class="wrap">
-    <p class="kicker">Объекты · 02</p>
+    <p class="kicker">Объекты</p>
     <h1 class="h1">Как это выглядит <br><span class="out">на объекте</span></h1>
     <p class="phead__lead">Монолит, кладка и кровля. Фильтр ниже делит снимки по виду работ.</p>
     <div class="chips" id="chips" role="tablist" aria-label="Фильтр объектов">
@@ -537,7 +538,7 @@ RABOTY = """
 PROIZVODSTVO = """
 <section class="phead">
   <div class="wrap">
-    <p class="kicker">Бригада · 03</p>
+    <p class="kicker">Бригада</p>
     <h1 class="h1">Больше 10 лет <br><span class="out">в Лиде и районе</span></h1>
     <p class="phead__lead">Небольшая бригада без посредников: тот, кто считает объект, сам на нём и работает. Ниже — принципы, по которым строим, и то, о чём обычно молчат.</p>
   </div>
@@ -596,7 +597,11 @@ PROIZVODSTVO = """
       <p class="cta__text">Даже если строить будете не с нами — скажем, что видно по вашему объекту. Это дешевле, чем переделывать армирование.</p>
       <div class="cta__actions">
         <a class="btn btn--solid" href="tel:__PH__">__PHONE__</a>
-        <a class="btn" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="msg">
+          <a class="btn btn--wa" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="__VIBER__">Viber</a>
+          <a class="btn" href="__TG__" target="_blank" rel="noopener">Telegram</a>
+        </div>
       </div>
     </div>
   </div>
@@ -606,7 +611,7 @@ PROIZVODSTVO = """
 KONTAKTY = """
 <section class="phead">
   <div class="wrap">
-    <p class="kicker">Контакты · 04</p>
+    <p class="kicker">Контакты</p>
     <h1 class="h1">Позвонить <br><span class="out">или написать</span></h1>
     <p class="phead__lead">Один номер — и телефон, и WhatsApp. Туда можно сразу прислать фото участка или проект.</p>
   </div>
@@ -616,7 +621,12 @@ KONTAKTY = """
   <div class="wrap contact__grid">
     <div class="contact__side">
       <a class="contact__tel" href="tel:__PH__">__PHONE__</a>
-      <p class="contact__note">WhatsApp на этот же номер.</p>
+      <p class="contact__note">Звонок, WhatsApp, Viber и Telegram — на этот же номер.</p>
+      <div class="msg">
+          <a class="btn btn--wa" href="__WA__" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="__VIBER__">Viber</a>
+          <a class="btn" href="__TG__" target="_blank" rel="noopener">Telegram</a>
+        </div>
       <dl class="defs">
         <div><dt>Город</dt><dd>__CITY__</dd></div>
         <div><dt>Область</dt><dd>Гродненская</dd></div>
@@ -645,7 +655,7 @@ KONTAKTY = """
       <label for="f-note">Объект, размеры, что уже сделано</label>
       <textarea id="f-note" name="note" rows="3" placeholder="Например: дом 9 × 11, фундамент нужен весной, участок в Лиде"></textarea>
       <button class="btn btn--solid form__btn" type="submit">Собрать заявку</button>
-      <p class="form__note">Кнопка соберёт текст и откроет WhatsApp с ним.</p>
+      <p class="form__note">Кнопка соберёт текст и откроет мессенджер с ним.</p>
       <div class="form__ok" id="form-ok" hidden>
         <p class="form__ok-title">Заявка готова</p>
         <pre id="order-text"></pre>
@@ -692,17 +702,17 @@ NEXT_MAP = {
 }
 
 PAGES = [
-    ("index.html", "Монолит, кладка, кровля, дома с материалом от 750 руб./м² — ИП Сорока, Лида",
+    ("index.html", "Монолит, кладка, кровля, дома с материалом от 750 руб./м² — ИП Сорока П.М., Лида",
      "Монолитные работы, фундаменты, кладка блоков и кирпича, кровля, строительство домов и хозпостроек с материалом от 750 руб./м². Лида и Гродненская область, опыт больше 10 лет.", None),
-    ("uslugi.html", "Работы и услуги: монолит, фундамент, кладка, кровля, дома от 750 руб./м² | ИП Сорока, Лида",
+    ("uslugi.html", "Работы и услуги: монолит, фундамент, кладка, кровля, дома от 750 руб./м² | ИП Сорока П.М., Лида",
      "Шесть видов работ: монолит, фундаменты, кладка газоблока и кирпича, кровля, строительство домов и хозпостроек с материалом от 750 руб./м². Что нужно от заказчика и как считается объём.", USLUGI),
-    ("raboty.html", "Объекты: монолит, кладка, кровля | ИП Сорока, Лида",
+    ("raboty.html", "Объекты: монолит, кладка, кровля | ИП Сорока П.М., Лида",
      "Фотографии работ: бетонирование, кладка блоков и кирпича, стропильная система и кровля.", RABOTY),
-    ("proizvodstvo.html", "Бригада: больше 10 лет в Лиде и районе | ИП Сорока",
+    ("proizvodstvo.html", "Бригада: больше 10 лет в Лиде и районе | ИП Сорока П.М.",
      "Небольшая бригада без посредников: конструктив целиком, своя опалубка и инструмент, смета по этапам, на чём нельзя экономить.", PROIZVODSTVO),
-    ("kontakty.html", "Контакты: +375 (25) 904-85-66, заявка на работы | ИП Сорока",
+    ("kontakty.html", "Контакты: +375 (25) 904-85-66, заявка на работы | ИП Сорока П.М.",
      "Телефон и WhatsApp +375 (25) 904-85-66. Лида, Гродненская область. Заявка на монолит, кладку, кровлю или дом с материалом.", KONTAKTY),
-    ("politika.html", "Политика обработки персональных данных | ИП Сорока",
+    ("politika.html", "Политика обработки персональных данных | ИП Сорока П.М.",
      "Как обрабатываются данные, переданные через сайт: цели, хранение, права.", POLITIKA),
 ]
 
@@ -736,11 +746,13 @@ def build():
                         .replace("__PH__", PHONE_H).replace("__PHONE__", PHONE).replace("__CITY__", CITY))
         foot = (FOOT.replace("{nav_foot}", "".join('<a href="%s">%s</a>' % (h, l) for h, l in NAV))
                     .replace("__PH__", PHONE_H).replace("__PHONE__", PHONE)
-                    .replace("__CITY__", CITY).replace("__AREA__", AREA))
+                    .replace("__CITY__", CITY).replace("__AREA__", AREA).replace("__VIBER__", VIBER).replace("__TG__", TG))
         page = (page_body.replace("__PH__", PHONE_H).replace("__PHONE__", PHONE)
-                         .replace("__CITY__", CITY).replace("__AREA__", AREA).replace("__WA__", WA))
-        mob = MOB.replace('__PH__', PHONE_H).replace('__WA__', WA)
-        html = head + header + page + nextblk + foot + drawer + mob + '<script src="assets/js/main.v3.js" defer></script>\n</body>\n</html>\n'
+                         .replace("__CITY__", CITY).replace("__AREA__", AREA).replace("__WA__", WA)
+                         .replace("__VIBER__", VIBER).replace("__TG__", TG))
+        mob = (MOB.replace('__PH__', PHONE_H).replace('__WA__', WA)
+                .replace('__VIBER__', VIBER).replace('__TG__', TG))
+        html = head + header + page + nextblk + foot + drawer + mob + '<script src="assets/js/main.v4.js" defer></script>\n</body>\n</html>\n'
         open(slug, "w", encoding="utf-8").write(html)
         print("built", slug, len(html))
 
